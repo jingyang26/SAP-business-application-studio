@@ -2,5 +2,9 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <Button text="Go to Quality Inspection"
+                press=".onNavigateToInspection" />
+        </content>
     </Page>
 </mvc:View>

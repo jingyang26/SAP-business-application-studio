@@ -51,6 +51,10 @@
                 "settings": {
                     "bundleName": "warehouse.i18n.i18n"
                 }
+            },
+            "inspection": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {}
             }
         },
         "resources": {
@@ -74,17 +78,51 @@
             },
             "routes": [
                 {
+                    "name": "Login",
+                    "pattern": "",
+                    "target": [
+                        "TargetLogin"
+                    ]
+                },
+                {
                     "name": "RouteView1",
-                    "pattern": ":?query:",
+                    "pattern": "home",
                     "target": [
                         "TargetView1"
+                    ]
+                },
+                {
+                    "name": "RouteQualityInspection",
+                    "pattern": "inspection/:id:",
+                    "target": [
+                        "TargetQualityInspection"
                     ]
                 }
             ],
             "targets": {
+                "TargetLogin": {
+                    "id": "Login",
+                    "name": "Login",
+                    "viewName": "Login",
+                    "viewType": "XML",
+                    "controlId": "app",
+                    "controlAggregation": "pages"
+                },
                 "TargetView1": {
                     "id": "View1",
-                    "name": "View1"
+                    "name": "View1",
+                    "viewName": "View1",
+                    "viewType": "XML",
+                    "controlId": "app",
+                    "controlAggregation": "pages"
+                },
+                "TargetQualityInspection": {
+                    "id": "QualityInspection",
+                    "name": "QualityInspection",
+                    "viewName": "QualityInspection",
+                    "viewType": "XML",
+                    "controlId": "app",
+                    "controlAggregation": "pages"
                 }
             }
         },

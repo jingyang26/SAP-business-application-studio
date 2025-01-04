@@ -1,0 +1,29 @@
+<mvc:View controllerName="warehouse.controller.QualityInspection"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="qualityInspectionPage" title="Quality Inspection">
+        <content>
+            <Table items="{inspection>/inspections}">
+                <columns>
+                    <Column>
+                        <Text text="Item ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Description" />
+                    </Column>
+                    <Column>
+                        <Text text="Result" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <Text text="{inspection>itemId}" />
+                        <Text text="{inspection>description}" />
+                        <Input value="{inspection>result}" placeholder="Enter Result (Pass/Fail)" />
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <Button text="Save" press=".onSaveInspection" />
+        </content>
+    </Page>
+</mvc:View>

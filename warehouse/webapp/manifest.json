@@ -85,6 +85,13 @@
                     ]
                 },
                 {
+                    "name": "RouteStockAnalysis",
+                    "pattern": "stock-analysis",
+                    "target": [
+                        "TargetStockAnalysis"
+                    ]
+                },
+                {
                     "name": "RouteView1",
                     "pattern": "home",
                     "target": [
@@ -104,6 +111,14 @@
                     "id": "Login",
                     "name": "Login",
                     "viewName": "Login",
+                    "viewType": "XML",
+                    "controlId": "app",
+                    "controlAggregation": "pages"
+                },
+                "TargetStockAnalysis": {
+                    "id": "StockAnalysis",
+                    "name": "StockAnalysis",
+                    "viewName": "StockAnalysis",
                     "viewType": "XML",
                     "controlId": "app",
                     "controlAggregation": "pages"

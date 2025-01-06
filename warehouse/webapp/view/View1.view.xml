@@ -1,10 +1,7 @@
-<mvc:View controllerName="warehouse.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+<mvc:View controllerName="warehouse.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="page" title="Main Dashboard">
         <content>
-            <Button text="Go to Quality Inspection"
-                press=".onNavigateToInspection" />
+            <Text text="Welcome to AKMAJU Warehouse System!" />
         </content>
     </Page>
 </mvc:View>

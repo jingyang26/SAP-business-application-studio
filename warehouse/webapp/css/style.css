@@ -72,3 +72,60 @@
     background-color: #004085; /* Even darker blue on click */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.stock-analysis-page {
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.logout-button {
+    margin-top: auto;
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-section-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.content-container {
+    padding: 2rem;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.filter-button,
+.export-button {
+    margin-left: 0.5rem;
+}
+
+.table-container {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

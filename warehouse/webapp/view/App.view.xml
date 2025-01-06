@@ -2,11 +2,5 @@
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <App id="app">
-        <pages>
-            <!-- Add placeholders for navigation -->
-            <mvc:XMLView viewName="warehouse.view.View1" id="View1" />
-            <mvc:XMLView viewName="warehouse.view.QualityInspection" id="QualityInspection" />
-        </pages>
-    </App>
+    <App id="app" />
 </mvc:View>

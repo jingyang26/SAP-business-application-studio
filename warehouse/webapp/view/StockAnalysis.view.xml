@@ -1,0 +1,53 @@
+<mvc:View controllerName="warehouse.controller.StockAnalysis" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page showHeader="false" class="stock-analysis-page">
+        <content>
+            <HBox class="main-container">
+                <!-- Sidebar -->
+                <VBox class="sidebar" width="20%" height="100%">
+                    <Text text="MAIN" class="sidebar-section-title" />
+                    <List>
+                        <StandardListItem title="Inventory" icon="sap-icon://inventory" />
+                        <StandardListItem title="Report" icon="sap-icon://document" />
+                    </List>
+                    <!-- Spacer to push Logout button to the bottom -->
+                    <VBox class="spacer" height="100%" />
+                    <Button text="Logout" type="Reject" class="logout-button" />
+                </VBox>
+
+                <!-- Main Content -->
+                <VBox class="content-container" width="80%">
+                    <VBox class="content-header">
+                        <Title text="Stock Analysis" level="H2" />
+                        <SearchField placeholder="Search" class="search-bar" />
+                        <HBox>
+                            <Button icon="sap-icon://filter" tooltip="Filter" class="filter-button" />
+                            <Button icon="sap-icon://download" tooltip="Export" class="export-button" />
+                        </HBox>
+                    </VBox>
+                    <Table id="stockAnalysisTable" inset="false" growing="true">
+                        <columns>
+                            <Column><Text text="#" /></Column>
+                            <Column><Text text="ITEM" /></Column>
+                            <Column><Text text="TYPE" /></Column>
+                            <Column><Text text="WAREHOUSE" /></Column>
+                            <Column><Text text="QUANTITY" /></Column>
+                            <Column><Text text="LEVEL" /></Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{stock>#}" />
+                                    <Text text="{stock>item}" />
+                                    <Text text="{stock>type}" />
+                                    <Text text="{stock>warehouse}" />
+                                    <Text text="{stock>quantity}" />
+                                    <Text text="{stock>level}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </VBox>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
